@@ -48,10 +48,19 @@ Before using this Docker container, ensure you have the following installed on y
 - -v $PWD:/my_source: Mounts the current directory to /my_source in the container.
 - my_image: The Docker image to run.
 
+
+
 4. **Running with GUI**
     To run the container with GUI support, you need to share the X11 socket with the container. Use the following command:
     ``sh 
     sudo docker run -it --user ros --network=host --ipc=host -v $PWD:/my_source -v /tmp/.X11-unix:/tmp/.X11-unix:rw --env=DISPLAY my_image ros2 topic list
+
+5. **Running Commands in the Docker Container**
+    To run a specific command inside the Docker container and have the container exit automatically after the command completes, append the command to the docker run command. For example, to run ros2 topic list and then exit, use:
+
+    ``sh
+
+    sudo docker run --rm --user ros --network=host --ipc=host -v $PWD:/my_source my_image ros2 topic list
 
 ## Troubleshooting
 **Permission Issues:**
