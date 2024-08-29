@@ -29,3 +29,10 @@ Before using this Docker container, ensure you have the following installed on y
    git clone <repository-url>
    cd <repository-directory>
 
+## Building the Docker Image
+
+To build the Docker image, use the following command:
+
+```sh
+sudo docker build -t my_image .
+
