@@ -26,8 +26,8 @@ Before using this Docker container, ensure you have the following installed on y
 
    Clone this repository to your local machine:
    ```sh
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/NithishGovind/ROS-Humble-docker-with-gui.git
+   cd ROS-Humble-docker-with-gui
 
 2. **Building the Docker Image**
 
