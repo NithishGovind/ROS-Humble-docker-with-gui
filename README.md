@@ -29,10 +29,22 @@ Before using this Docker container, ensure you have the following installed on y
    git clone <repository-url>
    cd <repository-directory>
 
-## Building the Docker Image
+2. **Building the Docker Image**
 
 To build the Docker image, use the following command:
 
 ```sh
 sudo docker build -t my_image .
 
+
+3. **Running the Docker Container**
+
+To start a Docker container with the ROS setup, use:
+```sh 
+sudo docker run -it --user ros --network=host --ipc=host -v $PWD:/my_source my_image
+
+--user ros: Runs the container as the ros user.
+--network=host: Uses the host network stack.
+--ipc=host: Shares IPC namespace with the host.
+-v $PWD:/my_source: Mounts the current directory to /my_source in the container.
+my_image: The Docker image to run.
