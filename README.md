@@ -9,6 +9,7 @@ This repository contains a Docker setup for running ROS Humble with GUI applicat
 - [Building the Docker Image](#building-the-docker-image)
 - [Running the Docker Container](#running-the-docker-container)
 - [Running with GUI](#running-with-gui)
+- [Running Commands in the Docker Container](#running-commands-in-the-docker-container)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
 
