@@ -44,8 +44,8 @@ Before using this Docker container, ensure you have the following installed on y
     ```sh 
     sudo docker run -it --user ros --network=host --ipc=host -v $PWD:/my_source my_image
 
-    -user ros: Runs the container as the ros user.
-    - network=host: Uses the host network stack.
-    -ipc=host: Shares IPC namespace with the host.
-    - -v $PWD:/my_source: Mounts the current directory to /my_source in the container.
-    my_image: The Docker image to run.
+- --user ros: Runs the container as the ros user.
+- --network=host: Uses the host network stack.
+- --ipc=host: Shares IPC namespace with the host.
+- -v $PWD:/my_source: Mounts the current directory to /my_source in the container.
+my_image: The Docker image to run.
